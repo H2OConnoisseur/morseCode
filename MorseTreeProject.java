@@ -144,7 +144,7 @@ public class MorseTreeProject   {
    	
       //System.out.println("Morse tree is: " + morseTree);
       //System.out.println(morseTree.encode("h"));
-      System.out.println(morseTree.encode("q") + "testing");
+      System.out.println(morseTree.encode("q") + "testing"); //This is the test I have been running
      //System.out.println(morseTree.decode("--.-"));
       //System.out.println(morseTree.decode("-."));	
    } // main

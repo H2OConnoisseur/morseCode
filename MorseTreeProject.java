@@ -15,7 +15,8 @@ public class MorseTreeProject   {
          }
       }
    }
-   
+//---------------------------------------------------------------------------------------------------------------------------
+   //This is the area I'm having trouble with
    public String encode(String inputEnglish){
       BTNode currentNode = root;
       String result = "";
@@ -24,16 +25,16 @@ public class MorseTreeProject   {
          //should use recursion to find the morse code for the letter
          //however, it returns blank
          result = findMorse(currentNode, currentLetter + "", symbol); 
-         System.out.println("here the result should print :" + result); //here the result should print
+         System.out.println("test 2: here the result should print " + result); //here the result should print
       }
-      System.out.println(result);
+      System.out.println(result + " test 3"); //this is a test of what the result should output
       return result;
    }
    
    public String findMorse(BTNode current, String letter, String symbol){
       String result = "";
       if (current.data.compareTo(letter) == 0){
-         System.out.println(symbol + " is the result");
+         System.out.println("test 1: " + symbol + " is the result");
          return symbol; //here i am returning the value
       }
       else{
@@ -46,7 +47,7 @@ public class MorseTreeProject   {
       }
       return symbol;
    }
-
+//------------------------------------------------------------------------------------------------------------------------------
    public String decode(String inputMorseCode) {
       BTNode current = root;
    	String result = "";
